@@ -2,8 +2,8 @@
 // Created by CanhDo on 2025/01/02.
 //
 
-#ifndef QRAT_TTY_HPP
-#define QRAT_TTY_HPP
+#ifndef QCHECK_TTY_HPP
+#define QCHECK_TTY_HPP
 
 #include <iostream>
 
@@ -62,4 +62,4 @@ inline std::ostream &operator<<(std::ostream &s, const Tty &t) {
     return s;
 }
 
-#endif//QRAT_TTY_HPP
+#endif//QCHECK_TTY_HPP

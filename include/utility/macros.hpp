@@ -2,8 +2,8 @@
 // Created by Canh Minh Do on 2024/11/10.
 //
 
-#ifndef QRAT_MACROS_HPP
-#define QRAT_MACROS_HPP
+#ifndef QCHECK_MACROS_HPP
+#define QCHECK_MACROS_HPP
 
 #include <iostream>
 #include <climits>
@@ -46,4 +46,4 @@ typedef long Int64;
 #define DEBUG(statements) statements
 #endif
 
-#endif//QRAT_MACROS_HPP
+#endif//QCHECK_MACROS_HPP

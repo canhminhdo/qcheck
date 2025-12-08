@@ -161,8 +161,4 @@ end
 
 pcheck in GROVER with 'P=? [F "target"]' --backend=Storm .
 
-search in GROVER with =>! such that P(q0, |1>) and P(q1, |1>) and P(q2, |0>) and P(q3, |0>) and P(q4, |0>) .
-
-psearch in GROVER with =>! such that P(q0, |1>) and P(q1, |1>) and P(q2, |0>) and P(q3, |0>) and P(q4, |0>) .
-
 quit .

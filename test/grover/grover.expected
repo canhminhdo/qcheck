@@ -11,20 +11,4 @@ Time for state transition graph construction with states: 126
 
 Result (for initial states): 0.9991822159
 
-==========================================
-search in GROVER with =>! such that P(q0, |1>) and P(q1, |1>) and P(q2, |0>) and P(q3, |0>) and P(q4, |0>) .
-
-Solution 1 (state 118)
-states: 119
-quantum state: 
-00011: (1,0)
-
-No more solutions.
-states: 126
-==========================================
-psearch in GROVER with =>! such that P(q0, |1>) and P(q1, |1>) and P(q2, |0>) and P(q3, |0>) and P(q4, |0>) .
-
-Result: 0.999182
-
-states: 126
 Bye.

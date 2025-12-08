@@ -2,17 +2,17 @@ if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
     message(FATAL_ERROR "In-source builds are not allowed")
 endif()
 
-set(BUILD_QRAT_TESTS
-    ON CACHE BOOL "Build QRAT tests" FORCE)
+set(BUILD_QCHECK_TESTS
+    ON CACHE BOOL "Build QCHECK tests" FORCE)
 
-set(BUILD_QRAT_DOC
-    OFF CACHE BOOL "Build QRAT document" FORCE)
+set(BUILD_QCHECK_DOC
+    OFF CACHE BOOL "Build QCHECK document" FORCE)
 
 set(FORMAT_SOURCE_CODE
-    OFF CACHE BOOL "Format source code for QRAT" FORCE)
+    OFF CACHE BOOL "Format source code for QCHECK" FORCE)
 
 set(CLANG_TIDY_ANALYSIS
-    OFF CACHE BOOL "Clang-tidy analysis for QRAT" FORCE)
+    OFF CACHE BOOL "Clang-tidy analysis for QCHECK" FORCE)
 
 set(DEPLOY
     ON CACHE BOOL "Set deployment configuration to ON for CI" FORCE)

@@ -16,3 +16,5 @@ begin
 end
 
 pcheck in TELEPORT with 'P=? [F "target"]' --backend=Storm .
+
+quit .

@@ -25,21 +25,21 @@ add_subdirectory(src)
 include_directories(include)
 
 # add documentation
-option(BUILD_QRAT_DOC "Build documentation for the QRAT project" ON) # only sets value if it is not already defined
-if(BUILD_QRAT_DOC)
+option(BUILD_QCHECK_DOC "Build documentation for the QCHECK project" ON) # only sets value if it is not already defined
+if(BUILD_QCHECK_DOC)
     add_subdirectory(doc)
 endif()
 
 # add test code
-option(BUILD_QRAT_TESTS "Build tests for the QRAT project" ON)
-if(BUILD_QRAT_TESTS)
+option(BUILD_QCHECK_TESTS "Build tests for the QCHECK project" ON)
+if(BUILD_QCHECK_TESTS)
     enable_testing()
     include(GoogleTest) # this modules defines functions to automatically discover test cases for Cmake with the use of GoogleTest
     add_subdirectory(test)
 endif()
 
 # add format source code
-option(FORMAT_SOURCE_CODE "Format source code for QRAT" ON)
+option(FORMAT_SOURCE_CODE "Format source code for QCHECK" ON)
 if(FORMAT_SOURCE_CODE)
     set(FORMAT_DIRECTORIES
         ${PROJECT_SOURCE_DIR}/src
@@ -50,7 +50,7 @@ if(FORMAT_SOURCE_CODE)
 endif()
 
 # add clang-tidy analysis
-option(CLANG_TIDY_ANALYSIS "Clang-tidy analysis for QRAT" ON)
+option(CLANG_TIDY_ANALYSIS "Clang-tidy analysis for QCHECK" ON)
 if(CLANG_TIDY_ANALYSIS)
     AddClangTidy(${PROJECT_NAME})
     AddClangTidy(Parser)

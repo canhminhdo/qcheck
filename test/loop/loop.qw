@@ -14,8 +14,4 @@ end
 
 pcheck in LOOP with 'P>=1 [F "target"]'  --backend=Storm .
 
-search in LOOP with =>! such that P(q, |0>) .
-
-psearch in LOOP with =>! such that P(q, |0>) .
-
 quit .

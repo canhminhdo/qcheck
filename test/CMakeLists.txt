@@ -8,7 +8,7 @@ if(NOT TARGET gtest OR NOT TARGET gmock)
     set_target_properties(gtest gtest_main gmock gmock_main PROPERTIES FOLDER extern)
 endif()
 
-message("Building tests for QRAT project")
+message("Building tests for QCHECK project")
 
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/testScript.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 file(GLOB DIRECTORIES LIST_DIRECTORIES true "${CMAKE_CURRENT_SOURCE_DIR}/*")

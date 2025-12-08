@@ -2,8 +2,8 @@
 // Created by Canh Minh Do on 2024/11/10.
 //
 
-#ifndef QRAT_STRINGTABLE_HPP
-#define QRAT_STRINGTABLE_HPP
+#ifndef QCHECK_STRINGTABLE_HPP
+#define QCHECK_STRINGTABLE_HPP
 
 #include <vector>
 
@@ -37,4 +37,4 @@ StringTable::name(int code) const {
     return stringTable[code];
 }
 
-#endif//QRAT_STRINGTABLE_HPP
+#endif//QCHECK_STRINGTABLE_HPP

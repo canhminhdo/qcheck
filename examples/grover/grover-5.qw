@@ -155,3 +155,5 @@ begin
 end
 
 pcheck in GROVER with 'P=? [F "target"]' --backend=Storm .
+
+quit .

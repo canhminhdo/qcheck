@@ -7,7 +7,6 @@ configure_file(${PROJECT_SOURCE_DIR}/examples/relay/relay.qw relay.qw)
 configure_file(${PROJECT_SOURCE_DIR}/examples/biteleport/biteleport.qw biteleport.qw)
 configure_file(${PROJECT_SOURCE_DIR}/examples/entangleswap/entangleswap.qw entangleswap.qw)
 configure_file(${PROJECT_SOURCE_DIR}/examples/networkcoding/networkcoding.qw networkcoding.qw)
-configure_file(${PROJECT_SOURCE_DIR}/examples/wmgrover/wmgrover.qw wmgrover.qw)
 
 add_executable(
     ${PROJECT_NAME}
