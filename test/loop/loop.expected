@@ -11,20 +11,4 @@ Time for state transition graph construction with states: 4
 
 Result (for initial states): true
 
-==========================================
-search in LOOP with =>! such that P(q, |0>) .
-
-Solution 1 (state 2)
-states: 3
-quantum state: 
-0: (1,0)
-
-No more solutions.
-states: 4
-==========================================
-psearch in LOOP with =>! such that P(q, |0>) .
-
-Result: 1
-
-states: 4
 Bye.

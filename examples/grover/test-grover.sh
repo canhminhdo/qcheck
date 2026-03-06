@@ -35,7 +35,7 @@ DIR=$(pwd)
 for i in {1..$items}
 do
 echo "Running test for grover-${N}-${i}.qw"
-cd $DIR/grover-$N && qrat -no-banner grover-${N}-${i}.qw > output-${N}-${i}.txt 2>&1 << EOF
+cd $DIR/grover-$N && qcheck -no-banner grover-${N}-${i}.qw > output-${N}-${i}.txt 2>&1 << EOF
 quit .
 EOF
 done

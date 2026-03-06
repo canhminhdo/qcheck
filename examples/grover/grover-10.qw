@@ -1380,5 +1380,6 @@ begin
 	if M[q9] = 1 then skip; else skip; fi;
 end
 
-// pcheck in GROVER with 'P=? [F "target"]' --backend=Storm .
-psearch in GROVER with =>! such that P(q0, |0>) and P(q1, |1>) and P(q2, |0>) and P(q3, |1>) and P(q4, |1>) and P(q5, |0>) and P(q6, |1>) and P(q7, |0>) and P(q8, |0>) and P(q9, |1>) .
+pcheck in GROVER with 'P=? [F "target"]' --backend=Storm .
+
+quit .

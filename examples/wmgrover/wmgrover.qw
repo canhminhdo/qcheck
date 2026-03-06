@@ -66,6 +66,4 @@ begin
     od;
 end
 
-search in WMGROVER with =>! such that true .
-
 quit .

@@ -2,8 +2,8 @@
 // Created by CanhDo on 2024/11/08.
 //
 
-#ifndef QRAT_VECTOR_HPP
-#define QRAT_VECTOR_HPP
+#ifndef QCHECK_VECTOR_HPP
+#define QCHECK_VECTOR_HPP
 
 #include <algorithm>
 #include <iostream>
@@ -145,4 +145,4 @@ private:
 };
 
 
-#endif//QRAT_VECTOR_HPP
+#endif//QCHECK_VECTOR_HPP

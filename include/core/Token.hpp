@@ -2,8 +2,8 @@
 // Created by Canh Minh Do on 2024/11/10.
 //
 
-#ifndef QRAT_TOKEN_HPP
-#define QRAT_TOKEN_HPP
+#ifndef QCHECK_TOKEN_HPP
+#define QCHECK_TOKEN_HPP
 
 #include "utility/StringTable.hpp"
 
@@ -29,4 +29,4 @@ private:
 
 using TokenList = std::vector<Token>;
 
-#endif//QRAT_TOKEN_HPP
+#endif//QCHECK_TOKEN_HPP

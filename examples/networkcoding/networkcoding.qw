@@ -60,6 +60,4 @@ end
 
 pcheck in NETWORK_CODING with 'P=? [F "target"]' --backend=Storm .
 
-search in NETWORK_CODING with =>! such that P(q1, q4, |phi+>) and P(q0, q5, |phi+>) .
-
-psearch in NETWORK_CODING with =>! such that P(q1, q4, |phi+>) and P(q0, q5, |phi+>) .
+quit .

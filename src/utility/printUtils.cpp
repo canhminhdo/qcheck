@@ -61,6 +61,6 @@ void printBanner() {
     std::cout << "\t\t   --- Welcome to " << projectName << " ---\n";
     std::cout << "\t\t     /|||||||||||||||||\\\n";
     std::cout << "\t     " << projectName << " " << PROJECT_VERSION << " built: " << PROJECT_BUILD_DATE << '\n';
-    std::cout << "\t        Copyright 2025 Ogata Laboratory\n";
+    std::cout << "\t        Copyright 2026 " << PROJECT_VENDOR << "\n";
     std::cout << "\t\t   " << ctime(&secs);
 }

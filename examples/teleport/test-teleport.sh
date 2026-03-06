@@ -6,7 +6,7 @@ end=99
 #  run 100 times
 for i in {$start..$end}
 do
-qrat -no-banner "-random-seed=${i}" > output-${i}.txt 2>&1 << EOF
+qcheck -no-banner "-random-seed=${i}" > output-${i}.txt 2>&1 << EOF
 load teleport.qw .
 quit .
 EOF
