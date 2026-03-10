@@ -14,7 +14,7 @@ This repository presents `QCheck` a framework for probabilistic model checking o
 ## Installation
 `QCheck` can be installed on your system using several ways as follows:
 
-### 1. Downloading from executable files
+### 1. Running QCheck from a Docker image
 QCheck executable files are available for macOS and Linux at the following link.
 ```
 https://github.com/canhminhdo/qcheck/releases/tag/v1.0
@@ -25,15 +25,13 @@ https://github.com/canhminhdo/qcheck/releases/tag/v1.0
 The `qcheck` program is available from the command line in the Docker container.
 
 ```shell
-$ docker build --no-cache -t qcheck .
-$ docker run --rm -it qcheck
+$ docker build --no-cache -t qcheck-artifact .
+$ docker run --rm -it qcheck-artifact
 ```
 
 ### 3. Building from source
 `QCheck` can be installed on your system after building it from the source.
 ```shell
-$ git clone --recurse-submodules https://github.com/canhminhdo/qcheck
-$ cd qcheck
 $ cmake -S . -B build -D CMAKE_BUILD_TYPE=Release # configure the project to be built with `Release` mode
 $ cmake --build build --config Release -j 8 # building the project with `Release` mode and 8 workers in parallel
 $ ctest --test-dir build # testing the project with some test cases

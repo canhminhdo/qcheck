@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+ARG TARGETARCH
+
 RUN apt-get -y update && apt-get install -y \
     vim \
     wget \
@@ -28,15 +30,14 @@ RUN cd /app \
 RUN rm -rf /app/cmake-3.31.10
 
 # building qcheck
-RUN cd /app \
-    && git clone --recurse-submodules https://github.com/canhminhdo/qcheck qcheck
+COPY . /app/qcheck
 
 RUN cd /app/qcheck \
     && mkdir build \
     && cmake -S . -B build -D CMAKE_BUILD_TYPE=Release -D CMAKE_CXX_COMPILER=c++ \
     && cmake --build build --config Release -j 8 \
     && cmake --install build --config Release \
-    && cpack -G "ZIP" --config build/CPackConfig.cmake -B package \
+    && cpack -G "ZIP" --config build/CPackConfig.cmake -B package
 
 RUN cd /app/qcheck \
     && mv install /qcheck-1.0 \
@@ -46,13 +47,25 @@ RUN cd /app/qcheck \
 RUN rm -rf /app/qcheck
 
 # PRISM model checker
-RUN cd /app \
-    && wget https://www.prismmodelchecker.org/dl/prism-4.8.1-linux64-x86.tar.gz \
-    && tar -xzf prism-4.8.1-linux64-x86.tar.gz \
-    && rm prism-4.8.1-linux64-x86.tar.gz \
-    && mv prism-4.8.1-linux64-x86 prism-4.8.1 \
-    && cd prism-4.8.1 \
-    && ./install.sh
+RUN if [ "$TARGETARCH" = "amd64" ]; then \
+        # linux64-x86
+        cd /app \
+        && wget https://www.prismmodelchecker.org/dl/prism-4.8.1-linux64-x86.tar.gz \
+        && tar -xzf prism-4.8.1-linux64-x86.tar.gz \
+        && rm prism-4.8.1-linux64-x86.tar.gz \
+        && mv prism-4.8.1-linux64-x86 prism-4.8.1 \
+        && cd prism-4.8.1 \
+        && ./install.sh ; \
+    elif [ "$TARGETARCH" = "arm64" ]; then \
+        #linux64-arm
+        cd /app \
+        && wget https://www.prismmodelchecker.org/dl/prism-4.8.1-linux64-arm.tar.gz \
+        && tar -xzvf prism-4.8.1-linux64-arm.tar.gz \
+        && rm prism-4.8.1-linux64-arm.tar.gz \
+        && mv prism-4.8.1-linux64-arm prism-4.8.1 \
+        && cd prism-4.8.1 \
+        && ./install.sh ; \
+    fi
 
 # Storm model checker
 RUN cd /app \
