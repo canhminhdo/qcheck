@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 start=0
 end=99

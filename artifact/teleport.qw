@@ -15,6 +15,8 @@ begin
     if M[q0] = 1 then Z[q2]; else skip; fi;
 end
 
+// pcheck in TELEPORT with 'P=? [F "target"]' --backend=PRISM .
+
 pcheck in TELEPORT with 'P=? [F "target"]' --backend=Storm .
 
 quit .

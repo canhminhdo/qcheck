@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # # # # # # # # # # # # # # # # # # # # # # # # # 
 #  ./test-grover.sh -n 10 -i 100                #

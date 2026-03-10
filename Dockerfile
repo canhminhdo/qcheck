@@ -3,6 +3,7 @@ FROM ubuntu:22.04
 ARG TARGETARCH
 
 RUN apt-get -y update && apt-get install -y \
+    time \
     vim \
     wget \
     git \
@@ -42,7 +43,7 @@ RUN cd /app/qcheck \
 RUN cd /app/qcheck \
     && mv install /qcheck-1.0 \
     && mv package/qcheck-1.0-Linux.zip /qcheck-1.0 \
-    && mv artifact/*.qw /app
+    && mv artifact/* /app
 
 RUN rm -rf /app/qcheck
 

@@ -4,6 +4,7 @@ var q0, q1, q2, q3, q4, q5, q6, q7, q8, q9 : qubit;
 prop
 	target := P(q0, |0>) and P(q1, |1>) and P(q2, |0>) and P(q3, |1>) and P(q4, |1>) and P(q5, |0>) and P(q6, |1>) and P(q7, |0>) and P(q8, |0>) and P(q9, |1>);
 begin
+	atomic {
 	// initialize superposition qubits
 	H[q0];
 	H[q1];
@@ -1365,6 +1366,7 @@ begin
 	H[q7];
 	H[q8];
 	H[q9];
+	};
 	// measure all qubits
 	if M[q0] = 1 then skip; else skip; fi;
 	if M[q1] = 1 then skip; else skip; fi;

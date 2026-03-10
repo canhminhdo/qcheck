@@ -18,6 +18,8 @@ begin
     if M[q1] = 1 then Z[q3]; else skip; fi;
 end
 
+// pcheck in ENTANGLE_SWAP with 'P=? [F "target"]' --backend=PRISM .
+
 pcheck in ENTANGLE_SWAP with 'P=? [F "target"]' --backend=Storm .
 
 quit .

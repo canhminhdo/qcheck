@@ -9,6 +9,8 @@ begin
     while M[q] = 1 do H[q]; od;
 end
 
+// pcheck in LOOP with 'P>=1 [F "target"]'  --backend=PRISM .
+
 pcheck in LOOP with 'P>=1 [F "target"]'  --backend=Storm .
 
 quit .

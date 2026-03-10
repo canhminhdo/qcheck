@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Function to generate random binary numbers
 generate_random_binaries() {
