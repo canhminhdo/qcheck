@@ -1,5 +1,5 @@
 //
-// Created by Canh Minh Do on 2025/06/08.
+// Created by Anonymous on 2025/06/08.
 //
 
 #include "core/StateSpaceGraph.hpp"

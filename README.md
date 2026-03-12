@@ -14,13 +14,7 @@ This repository presents `QCheck` a framework for probabilistic model checking o
 ## Installation
 `QCheck` can be installed on your system using several ways as follows:
 
-### 1. Running QCheck from a Docker image
-QCheck executable files are available for macOS and Linux at the following link.
-```
-https://github.com/canhminhdo/qcheck/releases/tag/v1.0
-```
-
-### 2. Running QCheck from Docker
+### 1. Running QCheck from Docker
 
 The `qcheck` program is available from the command line in the Docker container.
 
@@ -29,7 +23,7 @@ $ docker build --no-cache -t qcheck-artifact .
 $ docker run --rm -it qcheck-artifact
 ```
 
-### 3. Building from source
+### 2. Building from source
 `QCheck` can be installed on your system after building it from the source.
 ```shell
 $ cmake -S . -B build -D CMAKE_BUILD_TYPE=Release # configure the project to be built with `Release` mode
@@ -47,7 +41,7 @@ export STORM_PATH=<path-to-the-folder-where-Storm-is-available>
 ```
 
 ## Getting Started
-We can use QCheck to verify the correctness of Quantum Teleportation easily as follows.
+We can use QCheck to verify the correctness of `Quantum Teleportation` easily as follows.
 
 - Go to the `examples/teleport` folder
 ```
@@ -65,24 +59,23 @@ init
 prop
     target := P(q2, init[q0]);
 begin
-    q1 := H[q1];
-    q1, q2 := CX[q1, q2];
-    q0, q1 := CX[q0, q1];
-    q0 := H[q0];
-    if M[q1] = 1 then q2 := X[q2]; else skip; fi;
-    if M[q0] = 1 then q2 := Z[q2]; else skip; fi;
+    H[q1];
+    CX[q1, q2];
+    CX[q0, q1];
+    H[q0];
+    if M[q1] = 1 then X[q2]; else skip; fi;
+    if M[q0] = 1 then Z[q2]; else skip; fi;
 end
 
-pcheck in TELEPORT with 'P=? [F "target"]' --backend=PRISM .
+pcheck in TELEPORT with 'P=? [F "target"]' --backend=Storm .
+
+quit .
 ```
     
 By default, `QCheck` uses PRISM model checker, but we can change it using `--backend=<name>` where `<name>` is either PRISM or Storm.
 
 
-- Feed the `teleport.qw` program file into `QCheck` to verify its correctness with PRISM model checker.
+- Feed the `teleport.qw` program file into `QCheck` to verify its correctness with Storm model checker.
 ```shell
 qcheck teleport.qw
-```
-
-## Acknowledgements
-This research was partially supported by JSPS KAKENHI Grant Numbers JP23K28060, JP23K19959, JP24K20757, and JP24KK0185.
+``

@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2025/01/02.
+// Created by Anonymous on 2025/01/02.
 //
 
 #ifndef QCHECK_TTY_HPP

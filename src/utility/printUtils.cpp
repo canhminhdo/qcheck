@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2025/01/03.
+// Created by Anonymous on 2025/01/03.
 //
 
 #include "utility/printUtils.hpp"
@@ -46,7 +46,7 @@ void printHelp() {
               << "  -no-banner\t\tDo not output banner on startup\n"
               << "  -random-seed=<int>\t\tSet seed for random number generator\n"
               << "\n"
-              << "Send bug reports to: " << "canhdo@jaist.ac.jp" << std::endl;
+              << "Send bug reports to: " << "Anonymous@jaist.ac.jp" << std::endl;
     exit(0);
 }
 

@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2024/12/22.
+// Created by Anonymous on 2024/12/22.
 //
 
 #include "ast/PropExpNode.hpp"

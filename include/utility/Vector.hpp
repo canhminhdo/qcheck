@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2024/11/08.
+// Created by Anonymous on 2024/11/08.
 //
 
 #ifndef QCHECK_VECTOR_HPP

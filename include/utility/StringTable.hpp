@@ -1,5 +1,5 @@
 //
-// Created by Canh Minh Do on 2024/11/10.
+// Created by Anonymous on 2024/11/10.
 //
 
 #ifndef QCHECK_STRINGTABLE_HPP

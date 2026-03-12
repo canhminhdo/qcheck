@@ -1,5 +1,5 @@
 //
-// Created by Canh Minh Do on 2025/05/11.
+// Created by Anonymous on 2025/05/11.
 //
 
 #include "model/PrismRunner.hpp"

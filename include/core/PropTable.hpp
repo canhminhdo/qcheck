@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2025/05/09.
+// Created by Anonymous on 2025/05/09.
 //
 
 #ifndef PROPTABLE_HPP

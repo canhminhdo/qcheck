@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2024/12/17.
+// Created by Anonymous on 2024/12/17.
 //
 
 #ifndef STATETRANSITIONGRAPH_HPP

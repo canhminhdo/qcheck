@@ -1,5 +1,5 @@
 //
-// Created by CanhDo on 2025/06/04.
+// Created by Anonymous on 2025/06/04.
 //
 
 #include "ast/AtomicStmNode.hpp"
