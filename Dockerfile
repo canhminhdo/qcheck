@@ -70,10 +70,9 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
 
 # Storm model checker
 RUN cd /app \
-    && wget https://github.com/moves-rwth/storm/archive/stable.zip \
-    && unzip stable.zip \
-    && rm stable.zip \
-    && mv storm-stable storm-1.11.1
+    && wget https://github.com/moves-rwth/storm/archive/refs/tags/1.11.1.zip \
+    && unzip 1.11.1.zip \
+    && rm 1.11.1.zip
 
 RUN cd /app/storm-1.11.1 \
     && mkdir build \
